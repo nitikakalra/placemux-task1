@@ -1,45 +1,87 @@
-# Task 1 - System Ingestion & Model Environment Setup
+# PlaceMux Task 1 – System Ingestion & Model Environment Setup
 
 ## Objective
 
-To set up a reproducible machine learning environment and prepare the project structure for future model training and evaluation tasks.
+Set up a reproducible machine learning environment and verify the complete machine learning workflow including data ingestion, validation, dataset splitting, baseline model training, evaluation, and experiment tracking.
 
-## Environment Setup
+---
 
-* Created an isolated Python virtual environment.
-* Installed required libraries:
+## Technologies Used
 
-  * NumPy
-  * Pandas
-  * Scikit-learn
-  * Jupyter Notebook
-* Generated requirements.txt to ensure reproducibility.
+* Python
+* NumPy
+* Pandas
+* Scikit-Learn
+* Jupyter Notebook
+* Git
 
-## Reproducibility
-
-* Fixed random seed value (42) for deterministic execution.
-* Version-controlled dependencies using pip freeze.
+---
 
 ## Project Structure
 
-* data/ : Dataset storage directory
-* notebooks/ : Jupyter notebooks
-* src/ : Python source files
-* logs/ : Experiment logs and metrics
-* requirements.txt : Dependency versions
-* README.md : Documentation
+```text
+data/
+logs/
+│   └── metrics.csv
+notebooks/
+│   └── starter.ipynb
+src/
+│   └── train.py
+requirements.txt
+README.md
+.gitignore
+```
 
-## Experiment Tracking
+---
 
-A metrics.csv file was created to record future model evaluation results.
+## Work Completed
 
-## Current Status
+### Environment Setup
 
-Environment setup completed successfully. The project is ready for dataset ingestion, train/validation/test splitting, model training, and evaluation once the project dataset is provided.
+* Created isolated Python environment
+* Installed required libraries
+* Generated requirements.txt
+* Configured fixed random seed (42)
 
-## Verification
+### Dataset Ingestion
 
-* Environment activated successfully.
-* Required libraries installed.
-* Seed configuration verified.
-* Starter notebook executed successfully.
+* Loaded Iris dataset from Scikit-Learn
+* Verified dataset shape and data types
+* Checked class balance
+
+### Dataset Splitting
+
+* Performed stratified Train/Validation/Test split
+* Preserved class distribution across datasets
+
+### Baseline Model
+
+* Trained a DummyClassifier baseline model
+* Evaluated model on unseen test data
+* Calculated accuracy metric
+
+### Experiment Logging
+
+* Created metrics.csv for experiment tracking
+* Logged model information and evaluation results
+
+### Verification
+
+* Verified notebook execution
+* Verified source module execution
+* Verified dependency installation
+* Verified end-to-end workflow
+
+---
+
+## Notes
+
+No project-specific dataset was provided during onboarding. Therefore, the Iris dataset available in Scikit-Learn was used to validate the data ingestion pipeline, dataset splitting process, baseline model training workflow, and experiment tracking setup.
+
+---
+
+## Status
+
+Task 1 completed successfully.
+
+The project environment and machine learning workflow have been verified and are ready for future development tasks.
