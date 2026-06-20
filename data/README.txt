@@ -1,1 +1,1 @@
-Dataset will be placed here when provided by PlaceMux.
+Dataset will be placed here when provided by PlaceMux.No project-specific dataset was provided during onboarding. Therefore, the Iris dataset from scikit-learn was used to verify the data ingestion pipeline, class balance verification, train-validation-test splitting process, baseline model training, and experiment logging workflow.
